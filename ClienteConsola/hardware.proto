@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// El 'apellido' de nuestro código generado
+option csharp_namespace = "SistemaHardware";
+
+// Definimos las funciones que el servidor ofrece
+service Inventario {
+  rpc ConsultarStock (StockRequest) returns (StockReply);
+}
+
+// Lo que el cliente envía (La pregunta)
+message StockRequest {
+  string nombre_producto = 1;
+}
+
+// Lo que el servidor responde (La respuesta)
+message StockReply {
+  int32 cantidad = 1;
+  string mensaje = 2;
+}

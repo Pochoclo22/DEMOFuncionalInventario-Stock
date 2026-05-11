@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ClienteConsola/ClienteConsola.csproj" />
+  <Project Path="ServidorHardware/ServidorHardware.csproj" />
+</Solution>
